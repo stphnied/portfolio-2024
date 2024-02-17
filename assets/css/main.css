@@ -51,7 +51,7 @@ svg,img { max-width: 100%; height: auto; }
 ----------------------------------------------------------------*/
 .ds-header{ padding-top:3.75rem; text-align: center; position: relative;  }
 .ds-logo a{font-family: 'Poppins';font-weight: bolder; text-transform: uppercase; letter-spacing: 5px; font-size: 2rem}
-.ds-logo a:hover, .logo:hover{color: #000; opacity: 0.7;}
+.ds-logo a:hover, .logo:hover{color: #000; opacity: 0.8;filter: none;}
 .ds-logo span{display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 0.9375rem}
 .ds-about-link-button{ position: absolute; right:3%; border: 1px solid #000; display: inline-block; padding: 0.7rem 0.4rem;line-height: 3px;top:61%;}
 .ds-about-link-button:hover{color: #000}
@@ -62,8 +62,9 @@ svg,img { max-width: 100%; height: auto; }
 .ds-main-section{ padding: 7.5rem 0 }
 .ds-slider{ margin:0 }
 .ds-slider-loop{ padding-right:30px }
-.ds-slider-loop span{ text-transform: uppercase; font-size: 0.625rem; letter-spacing: 0.1875rem; display: inline-block; vertical-align: middle; margin-top: 1.125rem }
+.ds-slider-loop span{ text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1875rem; display: inline-block; vertical-align: middle; margin-top: 1.125rem }
 .ds-slider-loop span a{ color:#000; }
+.ds-slider-loop span:hover {font-weight: 600;}
 .ds-slider-loop span a i{ font-size: 1rem;display: inline-block;
     vertical-align: middle; }
 .slick-track{ cursor: move; }
