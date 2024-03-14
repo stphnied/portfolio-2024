@@ -51,14 +51,28 @@ svg,img { max-width: 100%; height: auto; }
 ----------------------------------------------------------------*/
 .ds-header{ padding-top:3.75rem; text-align: center; position: relative;  }
 .ds-logo a{font-family: 'Poppins';font-weight: bolder; text-transform: uppercase; letter-spacing: 5px; font-size: 2rem}
-.ds-logo a:hover, .logo:hover{color: #000; opacity: 0.8;filter: none;}
+.ds-logo a:hover, .logo:hover{
+  color: #000; opacity: 0.8;filter: none;
+  animation: shake 0.3s ease-in;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
 .ds-logo span{display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 0.9375rem}
 .ds-about-link-button{ position: absolute; right:3%; border: 1px solid #000; display: inline-block; padding: 0.7rem 0.4rem;line-height: 3px;top:61%;}
-.ds-about-link-button:hover{color: #000}
+.ds-about-link-button i:hover {color: #d61212bd;}
 .ds-about-link-button span{ display: block; color: #505050; font-size: 0.625rem; text-transform: uppercase; position: absolute; bottom:-13px;left: -12px;width: 55px; opacity: 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; }
 .ds-closebutton{ position: absolute; bottom:-5rem; left: 0; right: 0; margin: 0 auto; display: inline-block; width:3.125rem; height: 3.125rem;font-size: 1.125rem; line-height: 3.125rem; color: #687278; border: 1px solid #687278; border-radius: 100%}
 
-.ds-about-link-button:hover span{ opacity:1  }
+.ds-about-link-button:hover span,.ds-closebutton:hover { opacity:1; color:#d61212bd;}
 .ds-main-section{ padding: 7.5rem 0 }
 .ds-slider{ margin:0 }
 .ds-slider-loop{ padding-right:30px }
@@ -129,8 +143,8 @@ video {width: 100%}
 }
 
 .btn:hover {
-  background-color: rgb(249,250,251);
-  color: #111827;
+  background-color: #d6121247;
+  color: #white;
 }
 
 .btn:focus {
@@ -143,11 +157,11 @@ video {width: 100%}
 }
 
 .btn-secondary {
-	border-color: #ffffff00;
+	/* border-color: #d61212; */
 }
 .btn-secondary.active {
-	background-color: rgba(42, 44, 49, 0.8);
-	border-color: #51585e00;
+	background-color: #d61212bd;
+	border-color: #d61212;
 }
 /*-------------------------------------------------------------------------------
  XS Style @media (max-width: 767px) 
