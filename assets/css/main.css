@@ -96,7 +96,7 @@ svg,img { max-width: 100%; height: auto; }
 .ds-projec-info strong{ font-weight: 600;display: block; }
 
 .container-logo {margin-top:0; margin-bottom:0.9375rem;}
-.logo {height: 5rem; filter: grayscale(); opacity: 0.5;}
+.logo {height: 10rem;}
 .menu {padding: 4.5rem 0;}
 
 video {width: 100%}
